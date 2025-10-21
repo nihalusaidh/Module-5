@@ -32,9 +32,8 @@ s.show()
 
 
 ## Output
-Enter the student's name: Nihal
-This is non-parameterized constructor
-Welcome, Nihal!
+<img width="1913" height="790" alt="m5 o1" src="https://github.com/user-attachments/assets/822ceab8-18f8-4180-a252-159bbb99229c" />
+
 
 ## Result
 Thus the Python program that creates a **Student** class with a **default constructor** and a method to display a welcome message along with the student’s name provided by the user is executed successfully.
@@ -75,8 +74,8 @@ class Demo:
 obj = Demo()   
 del obj
 ## 🧪 Output
-Status: Alive
-The Demo object is being destroyed.
+
+<img width="1919" height="794" alt="m5 o2" src="https://github.com/user-attachments/assets/37bfdf20-09e3-4139-9a83-c816657657ce" />
 
 ## Result
 Thus the python program demonstrates how to implement a **destructor** in Python using a simple class.
@@ -115,7 +114,7 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-# Step 1: Base class
+
 class Details:
     def __init__(self, name, age):
         self.name = name
@@ -125,7 +124,7 @@ class Details:
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
 
-# Step 2: Employee class extending Details
+
 class Employee(Details):
     def __init__(self, name, age, emp_id, department):
         super().__init__(name, age)
@@ -138,7 +137,6 @@ class Employee(Details):
         print(f"Employee ID: {self.emp_id}")
         print(f"Department: {self.department}")
 
-# Step 3: Patient class extending Details
 class Patient(Details):
     def __init__(self, name, age, patient_id, illness):
         super().__init__(name, age)
@@ -151,7 +149,7 @@ class Patient(Details):
         print(f"Patient ID: {self.patient_id}")
         print(f"Illness: {self.illness}")
 
-# Step 4: Get user input
+
 print("Enter Employee Details:")
 emp_name = input("Name: ")
 emp_age = int(input("Age: "))
@@ -164,24 +162,15 @@ pat_age = int(input("Age: "))
 pat_id = input("Patient ID: ")
 pat_illness = input("Illness: ")
 
-# Step 5: Create objects and display information
+
 employee = Employee(emp_name, emp_age, emp_id, emp_dept)
 patient = Patient(pat_name, pat_age, pat_id, pat_illness)
 
 employee.display_details()
 patient.display_details()
 ## Sample Output
---- Employee Details ---
-Name: Nihal
-Age: 23
-Employee ID: 123456
-Department: Ic
+<img width="1916" height="791" alt="m5 o3" src="https://github.com/user-attachments/assets/21b1df4e-648c-4aa3-b7e6-835e50921273" />
 
---- Patient Details ---
-Name: Usaidh
-Age: 45
-Patient ID: 98765
-Illness: Headache
 
 Result
 Thus the Python program that uses **Hierarchical Inheritance** to input and display **Employee** and **Patient** details is executed successfully.
@@ -254,10 +243,9 @@ print(f"Age: {person.getAge()}")
 print(f"Location: {person.getLocation()}")
 ## Sample Output
 
---- Details ---
-Name: Nihal
-Age: 23
-Location: Chennai
+<img width="1911" height="793" alt="m5 o4" src="https://github.com/user-attachments/assets/439438ac-f298-4870-850b-8d156831a524" />
+
+
 
 Result
 Thus the Python program that uses multilevel inheritance to get and display a person’s name, age, and location.
@@ -289,17 +277,17 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
    - Display the results of the three operations.
 
 ## 💻 Program 
-# Step 1: Define Calculation1 class
+
 class Calculation1:
     def Summation(self, a, b):
         return a + b
 
-# Step 2: Define Calculation2 class
+
 class Calculation2:
     def Subtraction(self, a, b):
         return a - b
 
-# Step 3: Define Derived class inheriting both Calculation1 and Calculation2
+
 class Derived(Calculation1, Calculation2):
     def Division(self, a, b):
         if b != 0:
@@ -307,30 +295,25 @@ class Derived(Calculation1, Calculation2):
         else:
             return "Error! Division by zero."
 
-# Step 4: Input
+
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-# Step 5: Process
+
 calc = Derived()
 sum_result = calc.Summation(num1, num2)
 sub_result = calc.Subtraction(num1, num2)
 div_result = calc.Division(num1, num2)
 
-# Step 6: Output
+
 print("\n--- Results ---")
 print(f"Sum: {sum_result}")
 print(f"Difference: {sub_result}")
 print(f"Division: {div_result}")
 
 ## Output Example
-Enter first number: 23.5
-Enter second number: 34.6
 
---- Results ---
-Sum: 58.1
-Difference: -11.100000000000001
-Division: 0.6791907514450867
+<img width="1919" height="792" alt="m5 o5" src="https://github.com/user-attachments/assets/fe01631c-15be-44a3-abe4-e1eed62cecc9" />
 
 Result:
 Thus the Python program demonstrates **multiple inheritance** by performing basic arithmetic operations — Addition, Subtraction, and Division — using three classes is executed successfully.
